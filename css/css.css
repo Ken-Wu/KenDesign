@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.useso.com/css?family=Martel+Sans:200,300,400,800,900);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Georgia;
+}
+
+section {
+  height: 90%;
+  background-color: #000;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  margin: auto auto;
+}
+section a {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 4.875em;
+  font-weight: 900;
+  color: #fff;
+}
+section a:after, section a:before {
+  content: '';
+}
+section.head {
+	width:100%;
+	background-color: #fff;
+  position: fixed;
+  z-index: 10;
+}
+section.head a {
+  width: 652px;
+  height: 78px;
+  line-height: 78px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -326px;
+  margin-top: 0;
+  font-weight: 400;
+  color:#201AA7;
+  -webkit-transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+  -moz-transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+  transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+  z-index:100;
+}
+section.head a:before, section.head a:after {
+  color: #BEBCD1;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: none;
+  display: block;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  transition: inherit;
+}
+section.head a:before {
+  content: attr(data-bf);
+  position: absolute;
+  top: -45px;
+  left: 80px;
+}
+section.head a:after {
+  content: attr(data-af);
+  position: absolute;
+  right: 80px;
+  bottom: -46px;
+}
+section.head a:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+section.head a:hover:before {
+  -webkit-transform: scale(1.2) translate(-25px, -15px);
+  -moz-transform: scale(1.2) translate(-25px, -15px);
+  -ms-transform: scale(1.2) translate(-25px, -15px);
+  -o-transform: scale(1.2) translate(-25px, -15px);
+  transform: scale(1.2) translate(-25px, -15px);
+}
+section.head a:hover:after {
+  -webkit-transform: scale(1.2) translate(25px, 15px);
+  -moz-transform: scale(1.2) translate(25px, 15px);
+  -ms-transform: scale(1.2) translate(25px, 15px);
+  -o-transform: scale(1.2) translate(25px, 15px);
+  transform: scale(1.2) translate(25px, 15px);
+}
+#nav{
+	position:relative;
+	margin:0;
+	padding:0;
+	top:50px;
+	left:20px;
+}
+
+#nav>ul{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#nav>ul li{
+	margin:0;
+	padding:0;
+	width:80px;
+	height:80px;
+	line-height:80px;
+	position:relative;
+	display:block;
+}
+#nav>ul .qq{
+	background:url(images/qq.png) no-repeat center top;
+}
+#nav>ul .qq:hover{
+	background:url(images/qq_active.png) no-repeat;
+	
+}
+.shoot{
+	width:114px;
+	position:absolute;
+	font-size:16px;
+	color:#BEBCD1;
+	font-family:arial;
+	text-align:center;
+	line-height:26px;
+	top:80px;
+	left:-10px;
+	display:none;
+	z-index:200;
+}
+#nav>ul .qq:hover .shoot{
+	display:block;
+}
+#nav>ul .wechat{
+	background:url(images/wechat.png) no-repeat center top;
+}
+#nav>ul .wechat:hover{
+	background:url(images/wechat_active.png) no-repeat;
+	
+}
+.shoot2{
+	width:114px;
+	font-size:16px;
+	color:#BEBCD1;
+	font-family:arial;
+	text-align:center;
+	line-height:26px;
+	position:absolute;
+	top:80px;
+	left:-10px;
+	display:none;
+	z-index:200;
+}
+#nav>ul .wechat:hover .shoot2{
+	display:block;
+}
+
+#nav>ul .phone{
+	background:url(images/iphone.png) no-repeat center top;
+}
+#nav>ul .phone:hover{
+	background:url(images/iphone_active.png) no-repeat;
+	
+}
+.shoot3{
+	width:114px;
+	font-size:16px;
+	color:#BEBCD1;
+	font-family:arial;
+	text-align:left;
+	line-height:26px;
+	position:absolute;
+	top:80px;
+	left:-10%;
+	display:none;
+	z-index:200;
+}
+#nav>ul .phone:hover .shoot3{
+	display:block;
+}
+
+#nav>ul .mail{
+	background:url(images/mail.png) no-repeat center top;
+}
+#nav>ul .mail:hover{
+	background:url(images/mail_active.png) no-repeat;
+	
+}
+.shoot4{
+	width:150px;
+	font-size:16px;
+	color:#BEBCD1;
+	font-family:arial;
+	text-align:left;
+	line-height:26px;
+	position:absolute;
+	top:80px;
+	left:-10%;
+	display:none;
+	z-index:200;
+}
+#nav>ul .mail:hover .shoot4{
+	display:block;
+}
+
